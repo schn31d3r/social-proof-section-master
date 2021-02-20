@@ -1,0 +1,186 @@
+body,
+html {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     overflow: hidden;
+     font-family: "Spartan";
+}
+
+.wrapper {
+     position: relative;
+     text-align: center;
+     display: grid;
+     grid-template-columns: 40% 60%;
+     height: 100%;
+     margin: 7% 10% 7% 10%;
+     background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
+     background-position: right bottom, left top;
+     background-repeat: no-repeat, no-repeat;
+}
+
+/* Title */
+.title {
+     margin-bottom: 5rem;
+}
+
+.heading {
+     color: hsl(300, 43%, 22%);
+     font-weight: 700;
+     font-size: 2.5rem;
+     width: 70%;
+     margin: 0;
+}
+
+.intro-text {
+     color: hsl(303, 10%, 53%);
+     font-size: 0.8rem;
+     font-weight: 500;
+     line-height: 1.5rem;
+     width: 80%;
+     margin-top: 0.5rem;
+}
+
+/* Customer */
+.customer-section {
+     display: flex;
+     justify-content: space-between;
+     grid-column-start: 1;
+     grid-column-end: span 2;
+}
+
+.customer-1,
+.customer-2,
+.customer-3 {
+     height: 90%;
+     background-color: hsl(300, 43%, 22%);
+     border-radius: 0.5rem;
+     text-align: left;
+     font-size: 0.8rem;
+}
+
+.customer-2 {
+     margin: 0 2% 0 2%;
+     align-self: center;
+}
+
+.customer-3 {
+     align-self: flex-end;
+}
+
+.customer-heading {
+     display: flex;
+     padding: 2rem 1rem 0 2rem;
+}
+
+.customer-data {
+     margin: auto 1.5rem auto;
+}
+
+.customer-name {
+     color: hsl(300, 24%, 96%);
+     font-weight: 500;
+     margin: 0;
+}
+
+.customer-info {
+     color: hsl(333, 80%, 67%);
+     font-weight: 400;
+     margin-top: 0.5rem;
+}
+
+.customer-text {
+     color: hsl(300, 24%, 96%);
+     line-height: 1.5;
+     padding: 1rem 2rem 2rem 2rem;
+}
+
+.customer-image {
+     border-radius: 50%;
+     height: 15%;
+     width: 15%;
+}
+
+/* Reviews */
+.reviews {
+     display: flex;
+     flex-direction: column;
+}
+
+.rating {
+     color: hsl(300, 43%, 22%);
+     font-weight: 700;
+     background-color: hsl(300, 24%, 96%);
+     border-radius: 0.4rem;
+     width: 60%;
+     margin: 0.5rem;
+}
+
+.rating-1 {
+     display: flex;
+     align-self: flex-start;
+}
+
+.rating-2 {
+     display: flex;
+     align-self: center;
+}
+
+.rating-3 {
+     display: flex;
+     align-self: flex-end;
+}
+
+.stars {
+     margin: auto 1rem auto 1.5rem;
+}
+
+.attribution {
+     grid-column-start: 1;
+     grid-column-end: span 2;
+     font-size: 11px;
+     text-align: center;
+     margin-top: 2rem;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 992px) {
+
+     .wrapper,
+     .reviews,
+     .rating,
+     .rating-1,
+     .rating-2,
+     .rating-3 {
+          display: block;
+          margin: 0;
+          text-align: center;
+          margin: auto;
+          width: 100%;
+     }
+
+     .title {
+          text-align: center;
+     }
+
+     .heading {
+          margin: 3rem auto;
+     }
+
+     .intro-text {
+          margin: 0.5rem auto;
+     }
+
+     .customer-section {
+          display: block;
+     }
+
+     .customer-1,
+     .customer-2,
+     .customer-3 {
+          margin: 1rem 0 0 0;
+     }
+}
